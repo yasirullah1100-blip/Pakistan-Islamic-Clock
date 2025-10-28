@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistan Islamic Digital Clock</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    
+    <div class="clock-container">
+        <div class="left-panel">
+            <div class="moon"></div>
+            <div class="mosque">
+                <i class="fas fa-mosque"></i>
+            </div>
+            
+            <div class="header">
+                <h1>Pakistan Islamic Clock</h1>
+                <p>Live Pakistan Time with Islamic Calendar</p>
+            </div>
+            
+            <div class="time-display" id="time">00:00:00</div>
+            
+            <div class="date-display" id="gregorian-date">Loading...</div>
+            <div class="islamic-date" id="islamic-date">Loading...</div>
+            
+            <!-- Birthday Section -->
+            <div class="birthday-section">
+                <h3><i class="fas fa-birthday-cake"></i> Check Birthday</h3>
+                <div class="birthday-input">
+                    <input type="date" id="birthday-input">
+                    <button onclick="checkBirthday()">Check</button>
+                </div>
+                <div class="birthday-result" id="birthday-result"></div>
+            </div>
+            
+            <div class="footer">
+                <p>Pakistan Standard Time (UTC+5)</p>
+            </div>
+            
+            <!-- Floating icons -->
+            <div class="floating-icon"><i class="fas fa-star"></i></div>
+            <div class="floating-icon"><i class="fas fa-moon"></i></div>
+            <div class="floating-icon"><i class="fas fa-pray"></i></div>
+            <div class="floating-icon"><i class="fas fa-quran"></i></div>
+        </div>
+        
+        <div class="right-panel">
+            <div class="info-grid">
+                <div class="info-box">
+                    <h3>Islamic Month</h3>
+                    <p id="islamic-month">Loading...</p>
+                </div>
+                
+                <div class="info-box">
+                    <h3>Day of Week</h3>
+                    <p id="day-of-week">Loading...</p>
+                </div>
+                
+                <div class="info-box ramadan-box">
+                    <h3>Ramadan Status</h3>
+                    <p id="ramadan-info">Loading...</p>
+                </div>
+                
+                <div class="info-box">
+                    <h3>Eid-ul-Fitr</h3>
+                    <p id="eid-ul-fitr">Loading...</p>
+                </div>
+                
+                <div class="info-box">
+                    <h3>Eid-ul-Adha</h3>
+                    <p id="eid-ul-adha">Loading...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
